@@ -1,0 +1,16 @@
+#kt_activities {
+  width: 900px;
+}
+#kt_drawer_chat {
+  width: 500px;
+}
+@media screen and (max-width: 991px) {
+  #kt_activities {
+    width: 300px;
+  }  
+}
+@media screen and (max-width: 667px) {
+  #kt_drawer_chat {
+    width: 300px;
+  }
+}
