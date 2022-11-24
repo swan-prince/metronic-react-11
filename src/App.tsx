@@ -7,6 +7,7 @@ import Customers from 'pages/customers';
 import CustomerDetails from 'pages/customerDetails';
 import Projects from 'pages/projects';
 import ProjectDetail from 'pages/projectDetail';
+import LandingPage from 'pages/landing';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path='/customer-detail' element={<CustomerDetails />} />
           <Route path='/projects' element={<Projects />} />
           <Route path='/project-detail' element={<ProjectDetail />} />
+          <Route path='/landing' element={<LandingPage />} />
           <Route path='/' element={<Dashboard />} />
         </Routes>
       </Layout>

@@ -24,7 +24,10 @@ const CreateProjectDialog: FC<Props> = (props) => {
   }
 
   return (
-    <Modal id='kt_modal_create_app' tabIndex={-1} aria-hidden='true'
+    <Modal 
+      id='kt_modal_create_project' 
+      tabIndex={-1} 
+      aria-hidden='true'
       dialogClassName='modal-dialog-centered mw-900px'
       show={show}
       onHide={onHide}
@@ -143,4 +146,3 @@ const CreateProjectDialog: FC<Props> = (props) => {
 }
 
 export default CreateProjectDialog;
-

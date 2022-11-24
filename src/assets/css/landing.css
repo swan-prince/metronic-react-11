@@ -1,0 +1,115 @@
+
+:root,
+[data-theme=light] {
+  --kt-primary: #009ef7 !important; 
+  --kt-primary-light: #f1faff !important;
+  --kt-primary-active: #0095e8 !important;
+  --kt-text-primary: #009ef7 !important;
+  --kt-form-check-input-checked-bg-color-solid: #009ef7 !important;
+}
+.btn-group-lg>.btn, .btn-lg {
+  --bs-btn-padding-y: 0.825rem;
+  --bs-btn-padding-x: 1.75rem;
+  --bs-btn-font-size: 1.15rem;
+  --bs-btn-border-radius: 1.75rem !important;
+}
+.page-bg {
+  background-size: auto;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.launcher {
+  padding: 50px;
+}
+.launcher.sidebar-enabled {
+  padding-right: 475px;
+}
+.launcher .sidebar {
+  position: fixed;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 425px;
+  top: 50px;
+  right: 50px;
+  bottom: 50px;
+  background-color: rgba(19,0,97,.3);
+  border-radius: 1.75rem;
+}
+.launcher .sidebar .timeline .timeline-icon .symbol-label {
+  background-color: #244cab;
+}
+.launcher .sidebar .timeline .timeline-line {
+  opacity: .2;
+}
+.launcher .sidebar .border {
+  border: 1px solid rgba(255,255,255,.1)!important;
+}
+#kt_sidebar_body {
+  height: calc(100% - 126px);
+}
+#kt_sidebar_body.hover-scroll-y {
+  height: 100%;
+}
+.modal-fullscreen .modal-content .modal-header {
+  border-top-left-radius: 23px;
+  border-top-right-radius: 23px;
+}
+.header-bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.modal-fullscreen .modal-content {
+  border-radius: 24px !important;
+}
+a.link-primary {
+  color: #009ef7!important;
+}
+.dropzone {
+  min-height: auto;
+  padding: 1.5rem 1.75rem;
+  text-align: center;
+  cursor: pointer;
+  border: 1px dashed var(--kt-primary);
+  background-color: var(--kt-primary-light);
+  border-radius: 0.475rem!important;
+}
+.dropzone .dz-message {
+  margin: 0;
+  display: flex;
+  text-align: left;
+}
+@media screen and (min-width: 992px) {
+  .launcher .sidebar {
+    transform: none !important;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .launcher .sidebar {
+    /* display: none; */
+    width: 375px !important;
+    background-color: rgba(19,0,97,.75);
+    top: 15px;
+    right: 15px;
+    bottom: 15px;
+  }
+  .launcher.sidebar-enabled {
+    padding-right: 15px;
+    padding: 15px;
+  }
+  .drawer.drawer-end {
+    right: 0;
+    transform: translateX(100%);
+  }
+  .drawer.drawer-on {
+    transform: none;
+    box-shadow: var(--kt-drawer-box-shadow);
+    transition: transform 0.3s ease-in-out !important;
+  }
+}

@@ -10,7 +10,9 @@ const TrendsCard: FC = () => {
           <span className="text-muted mt-1 fw-semibold fs-7">Latest tech trends</span>
         </h3>
         <div className="card-toolbar">
-          <button type="button" className="btn btn-sm btn-icon btn-color-primary btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+          <button type="button" className="btn btn-sm btn-icon btn-color-primary btn-active-light-primary"
+            data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end"
+          >
             <span className="svg-icon svg-icon-2">
               <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
                 <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
